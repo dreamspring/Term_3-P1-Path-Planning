@@ -289,7 +289,8 @@ int main() {
                 }
             }
 
-            // change lane and accelerate
+            // Behavior Planning
+	    // change lane and accelerate
             double speed_diff = 0;
             const double MAX_SPEED = 49.5;
             const double MAX_ACC = .224;  // 0.224 m/s equals 0.1 mile/hour
@@ -319,7 +320,8 @@ int main() {
           	vector<double> ptsx;
             vector<double> ptsy;
 
-			// reference x, y, yaw states
+	    // Trajectory Generation: 
+	    //  reference x, y, yaw states
             double ref_x = car_x;
             double ref_y = car_y;
             double ref_yaw = deg2rad(car_yaw);
